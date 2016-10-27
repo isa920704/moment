@@ -1,0 +1,48 @@
+<ion-view title="碎片" id="debris">
+    <ion-content>
+        <div class="list one">
+            <div class="item item-image">
+                <ion-slide-box auto-play="true" does-continue="true" slide-interval="2000">
+                    <ion-slide>
+                        <img src="images/01.jpg">
+                    </ion-slide>
+                    <ion-slide>
+                        <img src="images/02.jpg">
+                    </ion-slide>
+                    <ion-slide>
+                        <img src="images/03.jpg">
+                    </ion-slide>
+                    <ion-slide>
+                        <img src="images/04.jpg">
+                    </ion-slide>
+                    <ion-slide>
+                        <img src="images/05.jpg">
+                    </ion-slide>
+                </ion-slide-box>
+                <p class="date"><i class="icon ion-social-buffer"></i>29/sep</p>
+            </div>
+        </div>
+        <div class="list">
+            <div class="item" ng-repeat="item in items">
+                <div class="item-avatar-left">
+                    <img ng-src="{{item.imgSrc}}">
+                    <div class="title">{{item.author}}</div>
+                    <p>{{item.time}}</p>
+                </div>
+                <div class="content">
+                    <img ng-src="{{item.contentSrc}}" ng-show="contentSrc(item.contentSrc);">
+                    <p>{{item.info}}</p>
+                    <div class="buttons ">
+                        <a class="button button-light">
+                            <i class="ion-android-favorite-outline"></i>
+                        </a>
+                        <a class="button button-light">
+                            <i class="ion-android-share-alt"></i>
+                        </a>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </ion-content>
+</ion-view>

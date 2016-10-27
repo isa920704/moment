@@ -1,0 +1,7 @@
+<ion-view title="动态" id="dynamic">
+    <ion-content>
+        <div class="row" ng-repeat="item in items">
+            <div class="col" ng-repeat="num in item.Src"><img ng-src="{{num.imgSrc}}" /> </div>
+        </div>
+    </ion-content>
+</ion-view>

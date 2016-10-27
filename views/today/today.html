@@ -1,0 +1,36 @@
+
+<ion-view title="今日" id="today">
+    <ion-content>
+        <div class="list card">
+            <ion-slide-box show-pager="false">
+                <ion-slide ng-repeat="item in items">
+                    <div class="item item-image">
+                        <img ng-src="{{item.imgSrc}}">
+                        <div class="text">
+                            <p><span>{{item.id}}</span>{{item.author}}</p>
+                            <div class="info">
+                                <p>{{item.info}}</p>
+                            </div>
+                            <p class="date">{{item.date}}</p>
+                        </div>
+                    </div>
+                    <item>&nbsp;</item>
+                    <div class="item tabs tabs-icon-left">
+                        <div class="tab-item">
+                            <i class="icon ion-android-favorite-outline"></i>{{item.dingNum}}
+                        </div>
+                        <div class="tab-item">
+                            <i class="icon ion-sad-outline"></i>{{item.caiNum}}
+                        </div>
+                        <div class="tab-item">
+                            <i class="icon ion-chatbox"></i>
+                        </div>
+                        <div class="tab-item">
+                            <i class="icon ion-share"></i>
+                        </div>
+                    </div>
+
+                </ion-slide>
+        </div>
+    </ion-content>
+</ion-view>

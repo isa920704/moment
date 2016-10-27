@@ -1,0 +1,161 @@
+<ion-side-menus>
+    <!--主内容区-->
+    <ion-side-menu-content>
+        <!--主内容区-->
+        <!--导航栏-->
+        <ion-nav-bar class="bar-assertive has-tabs-top">
+        <ion-nav-buttons>
+            <button class="button button-clear button-icon ion-navicon" menu-toggle></button>
+        </ion-nav-buttons>
+
+        <ion-nav-back-button class="button-icon ion-ios-arrow-back">
+            后退
+        </ion-nav-back-button>
+    </ion-nav-bar>
+
+        <!--导航视图-->
+
+        <<ion-nav-bar class="bar-dark has-tabs-top">
+        <ion-nav-buttons>
+            <button class="button button-clear button-icon ion-navicon" menu-toggle></button>
+        </ion-nav-buttons>
+            <ion-nav-back-button>后退</ion-nav-back-button>
+
+        </ion-nav-bar>
+        <ion-tabs class="tabs-striped tabs-icon-only">
+            <ion-tab title="今日" ui-sref="home.today"  icon-on="ion-ios-calendar" icon-off="ion-ios-calendar-outline">
+                <ion-nav-view name="home-today"></ion-nav-view>
+            </ion-tab>
+
+            <ion-tab title="碎片" ui-sref="home.debris" icon-on="ion-ios-flower" icon-off="ion-ios-flower-outline">
+                <ion-nav-view name="home-debris"></ion-nav-view>
+            </ion-tab>
+
+            <ion-tab title="动态" ui-sref="home.dynamic" icon-on="ion-ios-compose" icon-off="ion-ios-compose-outline">
+                <ion-nav-view name="home-dynamic"></ion-nav-view>
+            </ion-tab>
+
+            <ion-tab title="我的" ui-sref="home.mine" icon-on="ion-ios-person" icon-off="ion-ios-person-outline">
+                <ion-nav-view name="home-mine"></ion-nav-view>
+            </ion-tab>
+        </ion-tabs>
+    </ion-side-menu-content>
+
+    <!--左滑菜单-->
+    <ion-side-menu side="left">
+        <!--标题栏-->
+        <ion-header-bar class="bar-dark">
+        </ion-header-bar>
+
+        <!--内容区-->
+        <ion-content>
+            <div class="list">
+                <a class="item item-thumbnail-left">
+                    <img src="images/mine.jpg">
+                    <div class="h4">Sunshine</div>
+                    <div>155*****705</div>
+                </a>
+                <a class="item">
+                    <p>今日&nbsp;·&nbsp;<span>TODAY</span></p>
+                </a>
+                <a class="item">
+                    <p>电台&nbsp;·&nbsp;<span>RADIO</span></p>
+                </a>
+                <a class="item">
+                    <p>阅读&nbsp;·&nbsp;<span>READING</span></p>
+                </a>
+                <a class="item">
+                    <p>话题&nbsp;·&nbsp;<span>TOPICS</span></p>
+                </a>
+                <a class="item">
+                    <p>音乐&nbsp;·&nbsp;<span>MUSIC</span></p>
+                </a>
+                <a class="item">
+                    <p>订阅&nbsp;·&nbsp;<span>SUBSCRIPTION</span></p>
+                </a>
+                <a class="item">
+                    <p>设置&nbsp;·&nbsp;<span>SETTINGS</span></p>
+                </a>
+            </div>
+        </ion-content>
+    </ion-side-menu>
+</ion-side-menus>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!--<ion-nav-bar class="bar-dark">-->
+    <!--<ion-nav-back-button>后退</ion-nav-back-button>-->
+    <!--<ion-nav-buttons side="left">-->
+        <!--<button class="button button-icon ion-navicon">-->
+        <!--</button>-->
+    <!--</ion-nav-buttons>-->
+<!--</ion-nav-bar>-->
+<!--<ion-tabs class="tabs-striped tabs-icon-only">-->
+    <!--<ion-tab title="今日" ui-sref="home.today"  icon-on="ion-ios-calendar" icon-off="ion-ios-calendar-outline">-->
+        <!--<ion-nav-view name="home-today"></ion-nav-view>-->
+    <!--</ion-tab>-->
+
+    <!--<ion-tab title="碎片" ui-sref="home.debris" icon-on="ion-ios-flower" icon-off="ion-ios-flower-outline">-->
+        <!--<ion-nav-view name="home-debris"></ion-nav-view>-->
+    <!--</ion-tab>-->
+
+    <!--<ion-tab title="动态" ui-sref="home.dynamic" icon-on="ion-ios-compose" icon-off="ion-ios-compose-outline">-->
+        <!--<ion-nav-view name="home-dynamic"></ion-nav-view>-->
+    <!--</ion-tab>-->
+
+    <!--<ion-tab title="我的" ui-sref="home.mine" icon-on="ion-ios-person" icon-off="ion-ios-person-outline">-->
+        <!--<ion-nav-view name="home-mine"></ion-nav-view>-->
+    <!--</ion-tab>-->
+<!--</ion-tabs>-->
+
+<!--<ion-side-menus>-->
+<!--&lt;!&ndash;主内容区&ndash;&gt;-->
+<!--<ion-side-menu-content>-->
+<!--&lt;!&ndash;主内容区&ndash;&gt;-->
+<!--&lt;!&ndash;导航栏&ndash;&gt;-->
+<!--<ion-nav-bar class="bar-assertive has-tabs-top">-->
+<!--<ion-nav-buttons>-->
+<!--<button class="button button-clear button-icon ion-navicon" menu-toggle></button>-->
+<!--</ion-nav-buttons>-->
+
+<!--<ion-nav-back-button class="button-icon ion-ios-arrow-back">-->
+<!--后退-->
+<!--</ion-nav-back-button>-->
+<!--</ion-nav-bar>-->
+
+<!--&lt;!&ndash;导航视图&ndash;&gt;-->
+<!--<ion-nav-view></ion-nav-view>-->
+<!--</ion-side-menu-content>-->
+
+<!--&lt;!&ndash;左滑菜单&ndash;&gt;-->
+<!--<ion-side-menu side="left">-->
+<!--&lt;!&ndash;标题栏&ndash;&gt;-->
+<!--<ion-header-bar class="bar-calm">-->
+<!--<h1 class="title">系统设置</h1>-->
+<!--</ion-header-bar>-->
+
+<!--&lt;!&ndash;内容区&ndash;&gt;-->
+<!--<ion-content>-->
+<!--<div class="list">-->
+<!--<a class="item item-icon-left" ui-sref="#" menu-close>-->
+<!--<i class="icon ion-wifi"></i>WIFI设置-->
+<!--</a>-->
+<!--<a class="item item-icon-left" ui-sref="#" menu-close>-->
+<!--<i class="icon ion-ios-telephone"></i>联系我们:13688886666-->
+<!--</a>-->
+<!--</div>-->
+<!--</ion-content>-->
+<!--</ion-side-menu>-->
+<!--</ion-side-menus>-->

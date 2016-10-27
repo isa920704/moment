@@ -1,0 +1,25 @@
+html,body{height:100%;}
+.tourImg{height:100%;}
+.tourImg img{height:100%;width:100%}
+.tourImg a{position:absolute;right:30px;top:30px;text-decoration:none;color:#fff;}
+
+.button-ac{height:30px;width:30px;border-radius:50%;background:darkgreen;text-align: center;line-height:30px;}
+#today .card{padding:10px;height:100%;}
+#today .text p{line-height:26px;text-align:right;}
+#today .text .info p{text-align:left;height:150px;padding:10px 0;white-space:normal;word-wrap: break-word;}
+#today .text p span{float: left;}
+
+#debris{background:#f1f1f1;}
+#debris .one,#debris .one .item{margin:0;padding:0}
+#debris .date{text-align:left;padding:10px;}
+#debris .item{margin:8px 0;}
+#debris .item .item{margin:0;padding:0}
+#debris .item .item-avatar-left{padding-left:55px;min-height:60px;}
+#debris .content{white-space:normal;word-wrap: break-word;}
+#debris .content p{white-space:normal;word-wrap: break-word;}
+#debris .content img{width:100%;margin-bottom:5px;}
+#debris .content .buttons{text-align:right}
+
+#dynamic .col img{width: 100%}
+
+#mine .twoCode{height:30%;margin: 35px 20px;}
